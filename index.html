@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&display=swap');
+        body{
+            background-color: #a8dadc;
+            color:#1d3557;
+            
+            height: 100%;
+            
+            display:flex;
+            justify-content:center;  
+        }
+        .container{
+            margin:5em;
+            width:100%;
+        }
+        h1{
+            font-size:70px;
+            font-family: 'Edu NSW ACT Foundation', cursive;
+            
+        }
+        input{
+            font-family: 'Edu NSW ACT Foundation';
+            border-radius: 20px;
+            width:40%;
+            height: 3em;
+            background-color:rgba(217, 215, 215, 0.583);
+            transition:0.3s ease-in-out;
+        }
+        button{
+            color:black;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            background-color:white;
+            border-radius: 1em;
+            border:white;
+            width:60px;
+            height: 40px;
+            transition: 0.3s;
+        }
+        button:hover{
+            color:white;
+            background-color:black;
+        }
+        input::placeholder{
+            color:white;
+            padding:10px;
+            font-size:16px;
+            font-family: 'Edu NSW ACT Foundation', cursive;
+        }
+        .afterClick{
+            
+            cursor: pointer;
+            text-decoration: line-through;
+        }
+        
+        li{ list-style-type: upper-roman;
+            cursor: pointer;
+            margin-top:20px;
+            font-size:30px;
+            font-weight: bold;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><b>ToDO list</b></h1>
+        <input type="text" id="inputField" placeholder="add items...">
+        <button type="button" id="submit">+</button>
+        
+    </div>
+    <script src="toDoList.js"></script>
+</body>
+</html>
